@@ -4,125 +4,615 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/your-energy-project/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>YourEnergy</title>
     <script type="module" crossorigin src="/your-energy-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/your-energy-project/assets/styles-DvPDDfy5.css">
+    <link rel="modulepreload" crossorigin href="/your-energy-project/assets/vendor-Cn2Vr82J.js">
+    <link rel="modulepreload" crossorigin href="/your-energy-project/assets/main-B9tKbSqy.js">
+    <link rel="stylesheet" crossorigin href="/your-energy-project/assets/styles-B0ITRy-t.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/your-energy-project/assets/sprite-E8vg0sBb.svg#logo"></use>
+  <div class="container header-wrapper">
+    <a
+      class="logo mobile-logo"
+      href="./index.html"
+      aria-label="Your energy logo"
+    >
+      <svg class="logo-icon">
+        <use href="/your-energy-project/assets/main-logo-1t1ruA9Q.svg#main-logo"></use>
+      </svg>
+    </a>
+
+    <button
+      type="button"
+      class="menu-btn js-open-menu"
+      aria-controls="mob-menu"
+      aria-label="Open menu button"
+    >
+      <svg class="menu-btn-icon" width="32" height="32">
+        <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <div class="header-menu js-mobile-menu">
+      <button
+        type="button"
+        class="header-menu-close js-close-menu"
+        aria-controls="mob-menu"
+        aria-label="Close menu button"
+      >
+        <svg class="menu-btn-icon" width="32" height="32">
+          <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <a
+        class="logo desktop-logo"
+        href="./index.html"
+        aria-label="Your energy logo"
+      >
+        <svg class="logo-icon">
+          <use href="/your-energy-project/assets/main-logo-1t1ruA9Q.svg#main-logo"></use>
         </svg>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./favorite.html" class="nav-link">Favorites</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="social-menu">
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.facebook.com/goITclub/"
+            aria-label="Go to our Facebook page"
+            target="_blank"
+          >
+            <svg class="social-icon" width="28" height="28">
+              <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-facebook"></use>
+            </svg>
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.instagram.com/goitclub/"
+            aria-label="Go to our Instagram page"
+            target="_blank"
+          >
+            <svg class="social-icon" width="28" height="28">
+              <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.youtube.com/c/GoIT"
+            aria-label="Go to our Youtube page"
+            target="_blank"
+          >
+            <svg class="social-icon" width="28" height="28">
+              <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-youtube"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-    </nav>
+    </div>
   </div>
 </header>
 
 
     <main>
       <!-- Loads the specified .html file -->
-      <section class="vite-promo">
+      <!-- HERO START -->
+<div class="hero">
   <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/your-energy-project/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
+    <div class="hero-inner">
+      <div>
+        <h1 class="hero-title">
+          <svg class="hero-icon" width="59" height="59">
+            <use xlink:href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-sun"></use>
+          </svg>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
+          Get <em>Body</em> in<br />
+          shape, Stay healthy
+        </h1>
+        <p class="hero-desc">
+          Transform your physique and embrace a healthier lifestyle with our
+          comprehensive fitness and nutrition support.
+        </p>
+      </div>
+      <div class="hero-right">
+        <picture>
+          <source
+            srcset="data:image/jpeg;base64,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 1x, /your-energy-project/assets/yoga@2x-BIIgQcGT.jpg 2x"
+            media="(min-width: 1440px)"
+          />
+          <img src="" alt="Yoga" width="168" height="100" class="hero-promo" />
+        </picture>
+        <ul class="hero-tags hero-tags-desktop">
+          <li>#Sport</li>
+          <li>#Healthy</li>
+          <li>#Workout</li>
+          <li>#Diet</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hero-img">
+      <picture>
+        <source
+          srcset="/your-energy-project/assets/hero-desktop@1x-jc22lZLj.jpg 1x, /your-energy-project/assets/hero-desktop@2x-C0N4F2bk.jpg 2x"
+          media="(min-width: 1440px)"
+          type="image/jpeg"
+          width="1376"
+          height="350"
+        />
+        <source
+          srcset="/your-energy-project/assets/hero-tablet@1x-Dy8WVjAU.jpg 1x, /your-energy-project/assets/hero-tablet@2x-CEj4W7VX.jpg 2x"
+          media="(min-width: 768px)"
+          type="image/jpeg"
+          height="550"
+          width="704"
+        />
+        <source
+          srcset="/your-energy-project/assets/hero-mobile@1x-DfIAlQWf.jpg 1x, /your-energy-project/assets/hero-mobile@2x-BRinBwBk.jpg 2x"
+          media="(max-width: 767px)"
+          type="image/jpeg"
+          height="460"
+          width="335"
+        />
+        <img
+          src="/your-energy-project/assets/hero-desktop@1x-jc22lZLj.jpg"
+          alt="Yoga with two women"
+          width="1376"
+          height="350"
+        />
+      </picture>
+    </div>
+    <ul class="hero-tags hero-tags-mobile">
+      <li>#Sport</li>
+      <li>#Healthy</li>
+      <li>#Workout</li>
+      <li>#Diet</li>
     </ul>
   </div>
+</div>
+<!-- HERO END -->
+
+      <div class="container filters-container">
+  <div class="filters-header">
+    <h2 class="filter-title">Exercises
+      <span class="filter-subtitle">
+        <span>/</span>
+        <span class="filter-title-category"></span>
+      </span>
+    </h2>
+
+    <div class="filters-wrapper">
+      <form id="search-form" class="search-wrapper">
+        <label for="filter-search" class="sr-only">Search Exercises</label>
+        <input id="filter-search" class="search-input" placeholder="Search" />
+        <button type="submit" class="button-search">
+          <svg class="icon-search" width="18" height="18">
+            <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-search"></use>
+          </svg>
+        </button>
+        <button type="button" class="button-clear">
+          <svg class="icon-search" width="18" height="18">
+            <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-clear-search"></use>
+          </svg>
+        </button>
+      </form>
+      <ul class="filter-button-list">
+        <li class="filter-item">
+          <button class="filter-button filter-button-active" value="muscles">
+            Muscles
+          </button>
+        </li>
+        <li class="filter-item">
+          <button class="filter-button" value="bodypart">Body parts</button>
+        </li>
+        <li class="filter-item">
+          <button class="filter-button" value="equipment">Equipment</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+      <div class="container main">
+        <div class="article-bar">
+          <!-- QUOTE START -->
+<blockquote class="quote">
+  <div class="quote-icon">
+    <svg width="18" height="20">
+      <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-run"></use>
+    </svg>
+  </div>
+  <div class="quote-content">
+    <div class="quote-header">
+      <strong class="quote-title">Quote of the day</strong>
+      <svg class="quote-decor" width="24" height="24">
+        <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-quote"></use>
+      </svg>
+    </div>
+    <p class="quote-desc skeleton"></p>
+    <span class="quote-author skeleton"></span>
+  </div>
+</blockquote>
+<!-- QUOTE END -->
+
+          <!-- ARTICAL BAR START -->
+<picture class="article-bar-img">
+  <source
+    srcset="/your-energy-project/assets/article-bar-desktop@1x-ImPXrTuL.jpg 1x, /your-energy-project/assets/article-bar-desktop@2x-DNk970g-.jpg 2x"
+    media="(min-width: 1440px)"
+    type="image/jpeg"
+    width="444"
+    height="242"
+  />
+  <source
+    srcset="/your-energy-project/assets/article-bar-tablet@1x-qOjfGFz0.jpg 1x, /your-energy-project/assets/article-bar-tablet@2x-DV__a4dt.jpg 2x"
+    media="(min-width: 768px)"
+    type="image/jpeg"
+    height="288"
+    width="249"
+  />
+  <source
+    srcset="/your-energy-project/assets/article-bar-mobile@1x-BfUxTXGP.jpg 1x, /your-energy-project/assets/article-bar-mobile@2x-o1ATXH2W.jpg 2x"
+    media="(max-width: 767px)"
+    type="image/jpeg"
+    height="242"
+    width="335"
+  />
+  <img
+    src="/your-energy-project/assets/article-bar-desktop@1x-ImPXrTuL.jpg"
+    alt="Two women drink water"
+    width="444"
+    height="242"
+  />
+</picture>
+<!-- ARTICAL BAR END -->
+
+          <!-- INFO START -->
+<article class="info info-full">
+  <div class="info-icon">
+    <svg width="20" height="20">
+      <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-gym"></use>
+    </svg>
+  </div>
+  <div class="info-content">
+    <strong class="info-title">110 min</strong>
+    <p class="info-subtitle">Daily norm of sports</p>
+    <p class="info-desc">
+      The World Health Organization recommends at least 150 minutes of
+      moderate-intensity aerobic physical activity throughout the week for
+      adults aged 18-64. However, what happens if we adjust that number to 110
+      minutes every day? While it might seem like a high number to hit,
+      dedicating 110 minutes daily to sporting activities may offer unparalleled
+      benefits to physical health, mental well-being, and overall quality of
+      life.
+    </p>
+  </div>
 </article>
+<!-- INFO END -->
+
+        </div>
+
+        <div class="gallery">
+          <div class="loader-wrapper">
+  <span class="loader is-hidden js-loader"></span>
+</div>
+
+          <ul class="category-items"></ul>
+          <div class="exercises-container">
+</div>
+          <ul class="filter-pagination"></ul>
+
+        </div>
+      </div>
+      <div class="scroll-up-container">
+  <div class="scroll-up-button">
+  </div>
+</div>
 
     </main>
-
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container" id="footer">
+    <div class="footer-blocks">
+      <div class="footer-logo-soial">
+        <div class="footer-logo">
+          <a class="footer-logo-link" href="index.html">
+            <svg class="logo-icon-footer">
+              <use href="/your-energy-project/assets/main-logo-1t1ruA9Q.svg#main-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer-social-menu">
+          <ul class="social-menu-ul">
+            <li class="social-item">
+              <a
+                class="social-link-li"
+                href="https://www.facebook.com/goITclub/"
+                aria-label="Go to our Facebook page"
+                target="_blank"
+              >
+                <svg class="social-icon-li" width="28" height="28">
+                  <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link-li"
+                href="https://www.instagram.com/goitclub/"
+                aria-label="Go to our Instagram page"
+                target="_blank"
+              >
+                <svg class="social-icon-li" width="28" height="28">
+                  <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link-li"
+                href="https://www.youtube.com/c/GoIT"
+                aria-label="Go to our Youtube page"
+                target="_blank"
+              >
+                <svg class="social-icon-li" width="28" height="28">
+                  <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-text-subs">
+        <div class="footer-text">
+          <p class="text-footer">
+            Transforming your <span class="text-footer-word">body</span> shape
+            with us
+          </p>
+        </div>
+        <div class="footer-subscribe-form">
+          <form
+            class="subscribe-form"
+            name="subscription"
+            id="subscriptionForm"
+          >
+            <label class="subscribe-label" for="E-mail">
+              Subscribe and learn about new exercises!
+              <input
+                class="e-mail-input"
+                type="email"
+                id="E-mail"
+                name="E-mail"
+                placeholder="E-mail"
+                pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+                required
+              />
+            </label>
+            <div class="footer-subscribe-button">
+              <button class="subscribe-button" type="submit">
+                <span class="subscribe-button-text">Send</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-agreements">
+      <div class="footer-copy-policy">
+        <p class="footer-copy-paragraphs-rights">
+          Your Energy. All rights reserved.
+        </p>
+        <ul class="footer-policy-list">
+          <li class="footer-policy-item">
+            <a class="footer-policy-link" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer-policy-item">
+            <a class="footer-policy-link" href="#"
+              ><span class="footer-policy-separator">/</span>Terms of Service</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p class="footer-copy-paragraphs-year">©2023</p>
+    </div>
   </div>
 </footer>
 
+    <!-- <button data-modal-open value="64f389465ae26083f39b18d7">modal</button>
+<button data-modal-open value="64f389465ae26083f39b17b7">modal</button> -->
 
+<div class="backdrop visually-hidden" data-modal>
+  <div class="modal">
+    <button class="btn-modal-close" data-modal-close>
+      <svg class="icon icon-modal-close">
+        <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-close"></use>
+      </svg>
+    </button>
+    <img src="#" alt="Exercise demostration gif" class="img-modal-exercise" />
+    <div class="modal-info">
+      <p class="title-modal"></p>
+      <div class="rating divider">
+        <span class="rating-value"></span>
+        <div class="rating-stars">
+          <svg class="icon icon-modal-star" width="18" height="18">
+            <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-star"></use>
+          </svg>
+          <svg class="icon icon-modal-star" width="18" height="18">
+            <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-star"></use>
+          </svg>
+          <svg class="icon icon-modal-star" width="18" height="18">
+            <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-star"></use>
+          </svg>
+          <svg class="icon icon-modal-star" width="18" height="18">
+            <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-star"></use>
+          </svg>
+          <svg class="icon icon-modal-star" width="18" height="18">
+            <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-star"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="stats divider">
+        <ul class="stats-list"></ul>
+      </div>
+      <div class="description"><p class="desc-text"></p></div>
+      <div class="modal-buttons">
+        <button class="btn-modal-filled btn-modal-add-fav">
+          <span class="btn-fav-text">Add to favorites</span>
+          <svg class="icon icon-fav-btn" width="18" height="18">
+            <use
+              class="icon-fav-btn-use"
+              href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-heart"
+            ></use>
+          </svg>
+        </button>
+        <button class="btn-modal-give-rating" data-add-rating-open>
+          Give a rating
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add rating modal -->
+  <div class="add-rating-modal visually-hidden">
+    <button class="btn-modal-close" data-add-rating-close>
+      <svg class="icon icon-modal-close">
+        <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="add-rating-form" method="post">
+      <p class="add-rating-title">Rating</p>
+
+      <div class="add-rating-stars">
+        <span class="add-rating-value">0</span>
+        <label class="star-radio-btn">
+          <input
+            type="radio"
+            name="radio"
+            class="add-rating-radio-btn visually-hidden"
+            value="1"
+          />
+          <svg class="icon icon-modal-rating-star" width="24" height="24">
+            <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-star"></use>
+          </svg>
+        </label>
+        <label class="star-radio-btn">
+          <input
+            type="radio"
+            name="radio"
+            class="add-rating-radio-btn visually-hidden"
+            value="2"
+          />
+          <svg class="icon icon-modal-rating-star" width="24" height="24">
+            <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-star"></use>
+          </svg>
+        </label>
+        <label class="star-radio-btn">
+          <input
+            type="radio"
+            name="radio"
+            class="add-rating-radio-btn visually-hidden"
+            value="3"
+          />
+          <svg class="icon icon-modal-rating-star" width="24" height="24">
+            <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-star"></use>
+          </svg>
+        </label>
+        <label class="star-radio-btn">
+          <input
+            type="radio"
+            name="radio"
+            class="add-rating-radio-btn visually-hidden"
+            value="4"
+          />
+          <svg class="icon icon-modal-rating-star" width="24" height="24">
+            <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-star"></use>
+          </svg>
+        </label>
+        <label class="star-radio-btn">
+          <input
+            type="radio"
+            name="radio"
+            class="add-rating-radio-btn visually-hidden"
+            value="5"
+          />
+          <svg class="icon icon-modal-rating-star" width="24" height="24">
+            <use href="/your-energy-project/assets/icons-DRImzY5-.svg#icon-star"></use>
+          </svg>
+        </label>
+      </div>
+
+      <input
+        type="email"
+        class="input-modal add-rating-email"
+        name="email"
+        id="email"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        placeholder="Email"
+        required
+      />
+      <textarea
+        name="comment"
+        id="comment"
+        class="input-modal add-rating-comment"
+        placeholder="Your comment"
+        required
+      ></textarea>
+      <button type="submit" class="btn-modal-filled btn-add-rating-submit">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+
+
+
+
+    <!-- Gradient for half-star -->
+    <svg
+      style="width: 0; height: 0; position: absolute"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        <linearGradient id="star-gradient" x2="1" y2="0">
+          <stop offset="0%" stop-color="var(--accent-color)" />
+          <stop
+            class="gradient-middle"
+            offset="50%"
+            stop-color="var(--accent-color)"
+          />
+          <stop
+            class="gradient-middle"
+            offset="50%"
+            stop-color="var(--rating-color)"
+          />
+          <stop offset="100%" stop-color="var(--rating-color)" />
+        </linearGradient>
+      </defs>
+    </svg>
   </body>
 </html>
